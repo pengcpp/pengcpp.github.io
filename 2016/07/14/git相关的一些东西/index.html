@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="git," />
 
 
 
@@ -84,46 +84,25 @@
 
 
 
-<meta name="description" content="使用 ssh key 验证 github 的好处就是不用每次提交代码的时候都要输入用户名和密码，省去了多次提交时候的麻烦。
-创建一个 ssh key
-$ cd ~/.ssh
+<meta name="description" content="记录一些与git相关的东西想要更换git托管，如何迁移原git仓库。先查看remote的名字，假设你的remote是origin，用 git remote set-url 更换地址，假如想更换到github的NewProject下：
 
-
-如果没有则提示：
-
-bash: cd: /c/Users/Administrator/.ssh: No such file or directory
-
-
-可以自己创建文件夹也可以在生成时创建（.shh文件夹为cygwin默">
+git branch -r
+git remote set-url origin git@github.com:username/NewProject.git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows配置ssh访问github">
-<meta property="og:url" content="https://pengcpp.github.io/2016/07/12/windows-ssh-github/index.html">
+<meta property="og:title" content="git相关的一些东西">
+<meta property="og:url" content="https://pengcpp.github.io/2016/07/14/git相关的一些东西/index.html">
 <meta property="og:site_name" content="City">
-<meta property="og:description" content="使用 ssh key 验证 github 的好处就是不用每次提交代码的时候都要输入用户名和密码，省去了多次提交时候的麻烦。
-创建一个 ssh key
-$ cd ~/.ssh
+<meta property="og:description" content="记录一些与git相关的东西想要更换git托管，如何迁移原git仓库。先查看remote的名字，假设你的remote是origin，用 git remote set-url 更换地址，假如想更换到github的NewProject下：
 
-
-如果没有则提示：
-
-bash: cd: /c/Users/Administrator/.ssh: No such file or directory
-
-
-可以自己创建文件夹也可以在生成时创建（.shh文件夹为cygwin默">
-<meta property="og:updated_time" content="2016-07-14T09:02:32.317Z">
+git branch -r
+git remote set-url origin git@github.com:username/NewProject.git">
+<meta property="og:updated_time" content="2016-07-14T15:59:42.012Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows配置ssh访问github">
-<meta name="twitter:description" content="使用 ssh key 验证 github 的好处就是不用每次提交代码的时候都要输入用户名和密码，省去了多次提交时候的麻烦。
-创建一个 ssh key
-$ cd ~/.ssh
+<meta name="twitter:title" content="git相关的一些东西">
+<meta name="twitter:description" content="记录一些与git相关的东西想要更换git托管，如何迁移原git仓库。先查看remote的名字，假设你的remote是origin，用 git remote set-url 更换地址，假如想更换到github的NewProject下：
 
-
-如果没有则提示：
-
-bash: cd: /c/Users/Administrator/.ssh: No such file or directory
-
-
-可以自己创建文件夹也可以在生成时创建（.shh文件夹为cygwin默">
+git branch -r
+git remote set-url origin git@github.com:username/NewProject.git">
 
 
 
@@ -141,7 +120,7 @@ bash: cd: /c/Users/Administrator/.ssh: No such file or directory
   };
 </script>
 
-  <title> windows配置ssh访问github | City </title>
+  <title> git相关的一些东西 | City </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -271,7 +250,7 @@ bash: cd: /c/Users/Administrator/.ssh: No such file or directory
             
             
               
-                windows配置ssh访问github
+                git相关的一些东西
               
             
           </h1>
@@ -283,8 +262,8 @@ bash: cd: /c/Users/Administrator/.ssh: No such file or directory
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-12T22:50:14+08:00" content="2016-07-12">
-              2016-07-12
+            <time itemprop="dateCreated" datetime="2016-07-14T22:38:21+08:00" content="2016-07-14">
+              2016-07-14
             </time>
           </span>
 
@@ -330,80 +309,32 @@ bash: cd: /c/Users/Administrator/.ssh: No such file or directory
       
 
       
-        <p>使用 ssh key 验证 github 的好处就是不用每次提交代码的时候都要输入用户名和密码，省去了多次提交时候的麻烦。</p>
-<h3 id="创建一个-ssh-key"><a href="#创建一个-ssh-key" class="headerlink" title="创建一个 ssh key"></a>创建一个 ssh key</h3><pre>
-$ cd ~/.ssh
-</pre>
-
-<p>如果没有则提示：</p>
+        <h2 id="记录一些与git相关的东西"><a href="#记录一些与git相关的东西" class="headerlink" title="记录一些与git相关的东西"></a>记录一些与git相关的东西</h2><h3 id="想要更换git托管，如何迁移原git仓库。"><a href="#想要更换git托管，如何迁移原git仓库。" class="headerlink" title="想要更换git托管，如何迁移原git仓库。"></a>想要更换git托管，如何迁移原git仓库。</h3><p>先查看remote的名字，假设你的remote是origin，用 git remote set-url 更换地址，<br>假如想更换到github的NewProject下：</p>
 <pre>
-bash: cd: /c/Users/Administrator/.ssh: No such file or directory
+git branch -r
+git remote set-url origin git@github.com:username/NewProject.git
 </pre>
 
-<p>可以自己创建文件夹也可以在生成时创建（.shh文件夹为cygwin默认文件夹）</p>
-<p>生成并添加第一个ssh key</p>
+
+<p>如果你想从别的git托管那里复制一份源代码到新的git托管服务器上的话，可以通过以下步骤来操作来保留原版本库中的所有内容：</p>
+<p>从原地址克隆一份裸版本库，比如原本托管于github</p>
 <pre>
-$ ssh-keygen -t rsa -C "youremail@xxx.com" -f ~/.ssh/github_blog_keys
+git clone --bare git://github.com/username/project.git
 </pre>
 
-<p>-t 指定密钥类型，默认是 rsa ，可以省略</p>
-<p>-C 设置注释文字</p>
-<p>-f 指定密钥文件存储文件名，如果省略会使用默认文件名，生成 id_rsa 和 id_rsa.pub 两个秘钥文件</p>
-<p>接着又会提示你输入两次密码（此密码是你push文件的时候要输入的密码），不输入的话在push的时候就不需要输入密码，直接提交到github上。</p>
+<p>然后到新的git服务器(比如gitcafe)上创建一个新项目，以镜像推送的方式上传代码到gitcafe服务器上</p>
 <pre>
-$ Enter passphrase (empty for no passphrase):
-$ Enter same passphrase again:
+cd project.git
+git push --mirror git@gitcafe.com/username/newproject.git
 </pre>
 
-<p>接下来就会显示</p>
+<p>到新服务器gitcafe上找到Clone地址，直接Clone到本地就可以了</p>
 <pre>
-Your identification has been saved in /c/Users/Administrator/.ssh/github_blog_keys.
-Your public key has been saved in /c/Users/Administrator/.ssh/github_blog_keys.pub.
-The key fingerprint is:
-SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx youremail@xxx.com
-The key's randomart image is:
-+---[RSA 2048]----+
-|   ..   ..+      |
-| o. o. . o .     |
-|o ++  o   . o    |
-|.=.+..   . o .   |
-|+oA=.   B   .    |
-|.+*.=..          |
-|.+ =o=.   C      |
-|..Ao+... . .     |
-|.+o=..... .      |
-+----[SHA256]-----+
+git clone git@gitcafe.com/username/newproject.git
 </pre>
 
-<p><br><br></p>
-<h3 id="添加-ssh-key-到-github上"><a href="#添加-ssh-key-到-github上" class="headerlink" title="添加 ssh key 到 github上"></a>添加 ssh key 到 github上</h3><p>登录GitHub，点击右上角账号头像Settings，点击SSH and GPG keys， 选New SSH key，可以自己定义个名字，拷贝 github_blog_keys.pub 文件的内容（可以用编辑器打开复制）到对应输入框，点击Add Key 按钮后需要再次输入GitHub登录密码来确认。</p>
-<p><br><br></p>
-<h3 id="测试-ssh-key"><a href="#测试-ssh-key" class="headerlink" title="测试 ssh key"></a>测试 ssh key</h3><p>在 git bash 中输入代码</p>
-<pre>
-$ ssh -T git@github.com
-Hi username! You've successfully authenticated, but GitHub does not provide shell access.
-</pre>
-
-<p>如果提示的username正确的话，说明你已经成功设置SSH密钥。可能会出现警告，输入yes并回车就好。如果在生成ssh文件时设置了密码此处也会提示输入。</p>
-<p>注：这里如果在生成ssh文件时 -f 后面用了非默认的名字（github_blog_keys），测试的时候可能会遇到Permission denied (publickey)的问题。</p>
-<pre>
-$ ssh -T git@github.com
-The authenticity of host 'github.com (192.30.253.112)' can't be established.
-RSA key fingerprint is SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
-Permission denied (publickey).
-</pre>
-
-<p>这时需要将 github_blog_keys 加入到ssh中，然后再输入测试命令。</p>
-<pre>
-$ ssh-agent bash
-$ ssh-add ~/.ssh/github_blog_keys
-Identity added: /c/Users/Administrator/.ssh/github_blog_keys (/c/Users/Administrator/.ssh/github_blog_keys)
-$ ssh -T git@github.com
-Hi pengcpp! You've successfully authenticated, but GitHub does not provide shell access.
-</pre>
-
+<p><em>注：裸版本库不含工作区，直接就是版本库的内容，目录名以.git做后缀</em></p>
+<p>continue…</p>
 
       
     </div>
@@ -423,22 +354,24 @@ Hi pengcpp! You've successfully authenticated, but GitHub does not provide shell
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag">#git</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/12/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/07/12/windows-ssh-github/" rel="next" title="windows配置ssh访问github">
+                <i class="fa fa-chevron-left"></i> windows配置ssh访问github
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/14/git相关的一些东西/" rel="prev" title="git相关的一些东西">
-                git相关的一些东西 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -552,7 +485,7 @@ Hi pengcpp! You've successfully authenticated, but GitHub does not provide shell
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个-ssh-key"><span class="nav-number">1.</span> <span class="nav-text">创建一个 ssh key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-ssh-key-到-github上"><span class="nav-number">2.</span> <span class="nav-text">添加 ssh key 到 github上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试-ssh-key"><span class="nav-number">3.</span> <span class="nav-text">测试 ssh key</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#记录一些与git相关的东西"><span class="nav-number">1.</span> <span class="nav-text">记录一些与git相关的东西</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#想要更换git托管，如何迁移原git仓库。"><span class="nav-number">1.1.</span> <span class="nav-text">想要更换git托管，如何迁移原git仓库。</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

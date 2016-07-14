@@ -240,6 +240,144 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/14/git相关的一些东西/" itemprop="url">
+                  git相关的一些东西
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-14T22:38:21+08:00" content="2016-07-14">
+              2016-07-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/program/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="记录一些与git相关的东西"><a href="#记录一些与git相关的东西" class="headerlink" title="记录一些与git相关的东西"></a>记录一些与git相关的东西</h2><h3 id="想要更换git托管，如何迁移原git仓库。"><a href="#想要更换git托管，如何迁移原git仓库。" class="headerlink" title="想要更换git托管，如何迁移原git仓库。"></a>想要更换git托管，如何迁移原git仓库。</h3><p>先查看remote的名字，假设你的remote是origin，用 git remote set-url 更换地址，<br>假如想更换到github的NewProject下：</p>
+<pre>
+git branch -r
+git remote set-url origin git@github.com:username/NewProject.git
+</pre>
+
+
+<p>如果你想从别的git托管那里复制一份源代码到新的git托管服务器上的话，可以通过以下步骤来操作来保留原版本库中的所有内容：</p>
+<p>从原地址克隆一份裸版本库，比如原本托管于github</p>
+<pre>
+git clone --bare git://github.com/username/project.git
+</pre>
+
+<p>然后到新的git服务器(比如gitcafe)上创建一个新项目，以镜像推送的方式上传代码到gitcafe服务器上</p>
+<pre>
+cd project.git
+git push --mirror git@gitcafe.com/username/newproject.git
+</pre>
+
+<p>到新服务器gitcafe上找到Clone地址，直接Clone到本地就可以了</p>
+<pre>
+git clone git@gitcafe.com/username/newproject.git
+</pre>
+
+<p><em>注：裸版本库不含工作区，直接就是版本库的内容，目录名以.git做后缀</em></p>
+<p>continue…</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/12/windows-ssh-github/" itemprop="url">
                   windows配置ssh访问github
                 </a>
@@ -618,7 +756,7 @@ hexo deploy
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -632,6 +770,13 @@ hexo deploy
             </div>
           
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
